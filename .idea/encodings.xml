@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/config/config_example.yaml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/config/config_manager.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/config/config_example.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/config/config_manager.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/ultralytics" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

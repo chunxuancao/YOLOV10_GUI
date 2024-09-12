@@ -26,13 +26,13 @@ project_structure = {
         ],
         "training": [
             ("__init__.py", "# 训练模块初始化文件\n\n# 用于将 training 目录标记为一个包。\n"),
-            ("trainer.py", "# 模型训练器\n\n# 负责模型训练的主要逻辑，包括训练循环和优化。\n"),
+            ("train.py", "# 模型训练器\n\n# 负责模型训练的主要逻辑，包括训练循环和优化。\n"),
             ("evaluator.py", "# 模型评估器\n\n# 提供模型评估功能，包括计算损失和准确度。\n")
         ],
         "deployment": [
             ("__init__.py", "# 部署模块初始化文件\n\n# 用于将 deployment 目录标记为一个包。\n"),
-            ("deployer.py", "# 模型部署器\n\n# 负责模型的部署过程，包括配置和启动部署服务。\n"),
-            ("api_manager.py", "# 接口管理器\n\n# 管理模型推理的网络接口，处理接口请求和响应。\n")
+            ("Deployer.py", "# 模型部署器\n\n# 负责模型的部署过程，包括配置和启动部署服务。\n"),
+            ("Api_Net_InterfaceManager.py", "# 接口管理器\n\n# 管理模型推理的网络接口，处理接口请求和响应。\n")
         ],
         "utils": [
             ("__init__.py", "# 工具模块初始化文件\n\n# 用于将 utils 目录标记为一个包。\n"),
