@@ -595,8 +595,6 @@ def entrypoint(debug=""):
 
     # Show help
     LOGGER.info(f"💡 Learn more at https://docs.ultralytics.com/modes/{mode}")
-
-
 # Special modes --------------------------------------------------------------------------------------------------------
 def copy_default_cfg():
     """Copy and create a new default configuration file with '_copy' appended to its name."""
@@ -606,8 +604,6 @@ def copy_default_cfg():
         f"{DEFAULT_CFG_PATH} copied to {new_file}\n"
         f"Example YOLO command with this new custom cfg:\n    yolo cfg='{new_file}' imgsz=320 batch=8"
     )
-
-
 if __name__ == "__main__":
     # Example: entrypoint(debug='yolo predict model=yolov8n.pt')
     entrypoint(debug="")

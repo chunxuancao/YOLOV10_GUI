@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Results/val_batch0_labels.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Results/val_batch0_pred.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Results/val_batch1_labels.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Results/val_batch1_pred.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Results/val_batch2_labels.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Results/val_batch2_pred.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/YOLOV10GUI/config/config_example.yaml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/config/config_manager.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/data/extension_data_manager.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/engine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model/modules/yolov10" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model/nn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model/nn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/YOLOV10GUI/ultralytics" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
