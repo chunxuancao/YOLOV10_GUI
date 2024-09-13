@@ -1,5 +1,4 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
-
 import contextlib
 from copy import deepcopy
 from pathlib import Path
@@ -7,7 +6,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-from ultralytics.nn.modules import (
+from ..nn.modules import (
     AIFI,
     C1,
     C2,
@@ -55,11 +54,11 @@ from ultralytics.nn.modules import (
     RepVGGDW,
     v10Detect
 )
-from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
-from ultralytics.utils.checks import check_requirements, check_suffix, check_yaml
-from ultralytics.utils.loss import v8ClassificationLoss, v8DetectionLoss, v8OBBLoss, v8PoseLoss, v8SegmentationLoss, v10DetectLoss
-from ultralytics.utils.plotting import feature_visualization
-from ultralytics.utils.torch_utils import (
+from YOLOV10GUI.core.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
+from YOLOV10GUI.core.utils.checks import check_requirements, check_suffix, check_yaml
+from YOLOV10GUI.core.utils.loss import v8ClassificationLoss, v8DetectionLoss, v8OBBLoss, v8PoseLoss, v8SegmentationLoss, v10DetectLoss
+from YOLOV10GUI.core.utils.plotting import feature_visualization
+from YOLOV10GUI.core.utils.torch_utils import (
     fuse_conv_and_bn,
     fuse_deconv_and_bn,
     initialize_weights,
@@ -647,6 +646,7 @@ class YOLOv10DetectionModel(DetectionModel):
 
 class Ensemble(nn.ModuleList):
     """Ensemble of models."""
+
     def __init__(self):
         """Initialize an ensemble of models."""
         super().__init__()
