@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>291</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="epochs_label">
+      <property name="text">
+       <string>最大训练轮次</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="epochs"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="batch_label">
+      <property name="text">
+       <string>最大批次量</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="batch"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="imgsz_label">
+      <property name="text">
+       <string>输入图像大小</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="imgsz"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="patience">
+      <property name="text">
+       <string>防止过度拟合的等待轮次</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="patience_2"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="save_period_label">
+      <property name="text">
+       <string>保存模型检查点的频率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="save_period"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="workers_label">
+      <property name="text">
+       <string>载入数据的线程数</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QSpinBox" name="workers"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="seed_label">
+      <property name="text">
+       <string>随机种子</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QSpinBox" name="seed"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="close_mosaic_label">
+      <property name="text">
+       <string>马赛克增强</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QSpinBox" name="close_mosaic"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="lr0_label">
+      <property name="text">
+       <string>初始学习率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDoubleSpinBox" name="lr0"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lrf_label">
+      <property name="text">
+       <string>最终学习率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QDoubleSpinBox" name="lrf"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="sGDAdamBeta1Label">
+      <property name="text">
+       <string>动量因子momentum</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QDoubleSpinBox" name="sGDAdamBeta1"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="weight_decay_label">
+      <property name="text">
+       <string>L2 正则化项</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QDoubleSpinBox" name="weight_decay"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>30</y>
+     <width>271</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_4">
+    <item row="0" column="0">
+     <widget class="QLabel" name="warmup_epochs_label">
+      <property name="text">
+       <string>预热轮次</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="warmup_epochs"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="warmup_momentum_label">
+      <property name="text">
+       <string>预热初始动量</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="warmup_momentum"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="warmup_bias_lr_label">
+      <property name="text">
+       <string>预热偏差参数的学习率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="warmup_bias_lr"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="box_label">
+      <property name="text">
+       <string>边侧框训练损失权重</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDoubleSpinBox" name="box"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="cls_label">
+      <property name="text">
+       <string>分类损失权重</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDoubleSpinBox" name="cls"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="dfl_label">
+      <property name="text">
+       <string>分布焦点损失权重</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QDoubleSpinBox" name="dfl"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_smoothing_label">
+      <property name="text">
+       <string>标签平滑</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QDoubleSpinBox" name="label_smoothing"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="dropout_label">
+      <property name="text">
+       <string>分类正则化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QDoubleSpinBox" name="dropout"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="mask_ratio_label">
+      <property name="text">
+       <string>下采样率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDoubleSpinBox" name="mask_ratio"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="nbs_label">
+      <property name="text">
+       <string>损失标准化的名义批量大小</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QSpinBox" name="nbs"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>30</y>
+     <width>261</width>
+     <height>218</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="save">
+      <property name="text">
+       <string>保存模型</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="exist_ok">
+      <property name="text">
+       <string>覆盖对应文件夹</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="cache">
+      <property name="text">
+       <string>开启缓存，加快速度，但占用内存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="verbose">
+      <property name="text">
+       <string>训练日志文件导出</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="amp">
+      <property name="text">
+       <string>混合精度训练</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="profile">
+      <property name="text">
+       <string>启用 ONNX 和 TensorRT 速度分析</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="val">
+      <property name="text">
+       <string>开启验证</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="deterministic">
+      <property name="text">
+       <string>强制使用确定性算法</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="plots">
+      <property name="text">
+       <string>模型分析以及绘图</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="device">
+      <item>
+       <widget class="QLabel" name="device_label">
+        <property name="text">
+         <string>设备</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="cpu">
+        <property name="text">
+         <string>cpu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="gpu">
+        <property name="text">
+         <string>gpu（需要特定的环境）</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>291</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="hsv_h_label">
+      <property name="text">
+       <string>色相（颜色变化）</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDoubleSpinBox" name="hsv_h"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="hsv_s_label">
+      <property name="text">
+       <string>饱和度（颜色强度）</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="hsv_s"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="hsv_v_label">
+      <property name="text">
+       <string>亮度（不同光照）</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="hsv_v"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="degrees_label">
+      <property name="text">
+       <string>旋转图像</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDoubleSpinBox" name="degrees"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="translate_label">
+      <property name="text">
+       <string>水平和垂直平移</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDoubleSpinBox" name="translate"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="scale_label">
+      <property name="text">
+       <string>增益系数缩放图像</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QDoubleSpinBox" name="scale"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="shear_label">
+      <property name="text">
+       <string>模拟从不同角度查看对象的效果</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QDoubleSpinBox" name="shear"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="perspective_label">
+      <property name="text">
+       <string>随机透视变换</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QDoubleSpinBox" name="perspective"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="flipud_label">
+      <property name="text">
+       <string>图像倒置概率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QDoubleSpinBox" name="flipud"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="fliplr_label">
+      <property name="text">
+       <string>从左向右翻转图像的概率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QDoubleSpinBox" name="fliplr"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="bgr_label">
+      <property name="text">
+       <string>RGB 翻转为 BGR的概率</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QDoubleSpinBox" name="bgr"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>370</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>370</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数据增强</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>训练策略</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>399</y>
+     <width>271</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_3">
+    <item row="0" column="0">
+     <widget class="QLabel" name="mosaic_label">
+      <property name="text">
+       <string>模拟不同的场景合成和对象交互</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDoubleSpinBox" name="mosaic"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="mixup_label">
+      <property name="text">
+       <string>混合两个图像及其标签</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="mixup"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="copy_paste_label">
+      <property name="text">
+       <string>增加对象实例和学习对象遮挡</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="copy_paste"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="erasing_label">
+      <property name="text">
+       <string>随机擦除</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDoubleSpinBox" name="erasing"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="crop_fraction_label">
+      <property name="text">
+       <string>强调中心特征并适应对象比例</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDoubleSpinBox" name="crop_fraction"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="data_augement_label">
+      <property name="text">
+       <string>数据增强策略</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="data_augement">
+      <item>
+       <property name="text">
+        <string>randaugment</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>augmix</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>autoaugment</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="use_default">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>430</y>
+     <width>249</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>采用默认配置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_config">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>490</y>
+     <width>249</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存配置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

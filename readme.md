@@ -111,3 +111,7 @@ YOLOV10_GUI 的架构设计注重模块化和扩展性，下面详细介绍了�
 
 **备注**: 所有模块的协作和功能集成确保了模型训练和部署的高效与灵活性。通过 GUI 的图形界面，用户能够直观地配置、管理和部署机器学习模型。
 
+
+现在的api接口数据结构为
+{"id": tif_file.filename, "status": "success", "slice_info": slice_info}
+

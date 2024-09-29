@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模型部署界面</title>
+    <script>
+        async function uploadFile(endpoint, fileInput) {
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append(fileInput.name, file); // 使用正确的字段名
+            const response = await fetch(endpoint, {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                const result = await response.json();
+                alert("上传失败: " + result.detail);
+            } else {
+                const result = await response.json();
+                alert(result.message);
+            }
+        }
+
+        async function predict() {
+            const response = await fetch("/deploy/predict", {
+                method: "POST"
+            });
+
+            if (!response.ok) {
+                const result = await response.json();
+                alert("预测失败: " + result.detail);
+            } else {
+                const result = await response.json();
+                // 显示预测结果
+                alert("预测结果: " + JSON.stringify(result));
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>模型部署界面</h1>
+    <form onsubmit="event.preventDefault(); uploadFile('/deploy/upload_data', document.getElementById('tif_file'));">
+        <label for="tif_file">上传 TIF 文件:</label>
+        <input type="file" id="tif_file" name="tif_file" accept=".tif" required>
+        <button type="submit">提交 TIF 文件</button>
+    </form>
+
+    <button onclick="predict()">进行预测</button>
+</body>
+</html>
