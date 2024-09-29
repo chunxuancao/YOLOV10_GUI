@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/../../../Anaconda/envs/yolov10/Lib/site-packages/starlette/staticfiles.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch0_labels.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch0_pred.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch1_labels.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch1_pred.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch2_labels.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Results/val_batch2_pred.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/config/config_example.yaml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/coco.yaml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/config/config_manager.py" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/data/extension_data_manager.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/default.yaml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/engine" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model/modules/yolov10" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model/nn" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/ultralytics" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/ultralytics" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/utils" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/yolov10m.pt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/yolov10m.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/app.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/coco.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/control/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/control/control_deploy.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/control/control_train.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/deploy/geoDetect.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/deploy/utils.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/deploy/yolov10_detect_deployer.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model_param/yolov10_detect/best.onnx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model_param/yolov10_detect/best.pt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/model_param/yolov10_detect/yolov10m.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/models/yolov10" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/models/yolov10/v10" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/models/yolov10/v10_pretrain/yolov10m.pt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/tasks/detect/yolov10_detect/train/core/engine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/core/tasks/utils.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/default.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/gui/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/gui/default.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/YOLOV10GUI/gui/plane.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ultralytics" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
